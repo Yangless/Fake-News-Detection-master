@@ -1,0 +1,69 @@
+run.py:35: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  x_train["new"] = t["Title"] + ' ' + t["Ofiicial Account Name"] + ' ' + t["Report Content"]
+run.py:39: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  x_dev["new"] = t["Title"] + ' ' + t["Ofiicial Account Name"] + ' ' + t["Report Content"]
+run.py:43: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  x_test["new"] = t["Title"] + ' ' + t["Ofiicial Account Name"] + ' ' + t["Report Content"]
+Loading data...
+Time usage: 0:00:09
+Epoch [1/100]
+E:\Code\Fake-News-Detection-master\bert\pytorch_pretrained\optimization.py:275: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at C:\cb\pytorch_1000000000000\work\torch\csrc\utils\python_arg_parser.cpp:1630.)
+  next_m.mul_(beta1).add_(1 - beta1, grad)
+Iter:      0,  Train Loss:  0.69,  Train Acc: 58.59%,  Val Loss:  0.69,  Val Acc: 76.77%,  Time: 0:00:03 *
+Iter:    100,  Train Loss:  0.52,  Train Acc: 78.91%,  Val Loss:  0.52,  Val Acc: 78.68%,  Time: 0:00:31 *
+Epoch [2/100]
+Iter:    200,  Train Loss:  0.59,  Train Acc: 74.22%,  Val Loss:  0.52,  Val Acc: 78.68%,  Time: 0:00:57 
+Epoch [3/100]
+Iter:    300,  Train Loss:  0.58,  Train Acc: 75.78%,  Val Loss:  0.53,  Val Acc: 78.68%,  Time: 0:01:24 
+Epoch [4/100]
+Iter:    400,  Train Loss:  0.55,  Train Acc: 76.56%,  Val Loss:  0.52,  Val Acc: 78.68%,  Time: 0:01:51 
+Iter:    500,  Train Loss:  0.56,  Train Acc: 75.78%,  Val Loss:  0.52,  Val Acc: 78.68%,  Time: 0:02:18 
+Epoch [5/100]
+Iter:    600,  Train Loss:  0.42,  Train Acc: 85.94%,  Val Loss:  0.52,  Val Acc: 78.68%,  Time: 0:02:45 
+Epoch [6/100]
+Iter:    700,  Train Loss:  0.53,  Train Acc: 78.12%,  Val Loss:  0.52,  Val Acc: 78.68%,  Time: 0:03:12 
+Epoch [7/100]
+Iter:    800,  Train Loss:  0.53,  Train Acc: 78.12%,  Val Loss:  0.53,  Val Acc: 78.68%,  Time: 0:03:39 
+Iter:    900,  Train Loss:  0.57,  Train Acc: 75.00%,  Val Loss:  0.52,  Val Acc: 78.68%,  Time: 0:04:11 
+Epoch [8/100]
+Iter:   1000,  Train Loss:  0.49,  Train Acc: 80.47%,  Val Loss:  0.52,  Val Acc: 78.68%,  Time: 0:04:43 
+Epoch [9/100]
+Iter:   1100,  Train Loss:  0.55,  Train Acc: 76.56%,  Val Loss:  0.52,  Val Acc: 78.68%,  Time: 0:05:15 
+No optimization for a long time, auto-stopping...
+C:\Users\Y\miniconda3\envs\fake_news_detection\lib\site-packages\sklearn\metrics\_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Y\miniconda3\envs\fake_news_detection\lib\site-packages\sklearn\metrics\_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+C:\Users\Y\miniconda3\envs\fake_news_detection\lib\site-packages\sklearn\metrics\_classification.py:1471: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Test Loss:  0.58,  Test Acc: 74.09%
+Precision, Recall and F1-Score...
+              precision    recall  f1-score   support
+
+         真新闻     0.7409    1.0000    0.8512      7844
+         假新闻     0.0000    0.0000    0.0000      2743
+
+    accuracy                         0.7409     10587
+   macro avg     0.3705    0.5000    0.4256     10587
+weighted avg     0.5489    0.7409    0.6306     10587
+
+Confusion Matrix...
+[[7844    0]
+ [2743    0]]
+Time usage: 0:00:05
+[0m

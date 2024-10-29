@@ -1,0 +1,77 @@
+run.py:35: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  x_train["new"] = t["Title"] + ' ' + t["Ofiicial Account Name"] + ' ' + t["Report Content"]
+run.py:39: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  x_dev["new"] = t["Title"] + ' ' + t["Ofiicial Account Name"] + ' ' + t["Report Content"]
+run.py:43: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  x_test["new"] = t["Title"] + ' ' + t["Ofiicial Account Name"] + ' ' + t["Report Content"]
+Loading data...
+Time usage: 0:00:09
+Epoch [1/100]
+E:\Code\Fake-News-Detection-master\bert\pytorch_pretrained\optimization.py:275: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at C:\cb\pytorch_1000000000000\work\torch\csrc\utils\python_arg_parser.cpp:1630.)
+  next_m.mul_(beta1).add_(1 - beta1, grad)
+Iter:      0,  Train Loss:  0.56,  Train Acc: 75.78%,  Val Loss:  0.51,  Val Acc: 78.68%,  Time: 0:00:04 *
+Iter:    100,  Train Loss:  0.13,  Train Acc: 94.53%,  Val Loss:  0.16,  Val Acc: 94.36%,  Time: 0:00:36 *
+Epoch [2/100]
+Iter:    200,  Train Loss:  0.12,  Train Acc: 95.31%,  Val Loss: 0.091,  Val Acc: 96.84%,  Time: 0:01:10 *
+Epoch [3/100]
+Iter:    300,  Train Loss: 0.079,  Train Acc: 97.66%,  Val Loss: 0.075,  Val Acc: 97.27%,  Time: 0:01:44 *
+Epoch [4/100]
+Iter:    400,  Train Loss: 0.022,  Train Acc: 99.22%,  Val Loss: 0.069,  Val Acc: 98.12%,  Time: 0:02:18 *
+Iter:    500,  Train Loss: 0.0058,  Train Acc: 100.00%,  Val Loss: 0.049,  Val Acc: 98.38%,  Time: 0:02:52 *
+Epoch [5/100]
+Iter:    600,  Train Loss:  0.04,  Train Acc: 98.44%,  Val Loss: 0.054,  Val Acc: 98.50%,  Time: 0:03:26 
+Epoch [6/100]
+Iter:    700,  Train Loss: 0.031,  Train Acc: 99.22%,  Val Loss: 0.052,  Val Acc: 98.60%,  Time: 0:03:59 
+Epoch [7/100]
+Iter:    800,  Train Loss: 0.042,  Train Acc: 99.22%,  Val Loss: 0.056,  Val Acc: 98.79%,  Time: 0:04:33 
+Iter:    900,  Train Loss: 0.022,  Train Acc: 98.44%,  Val Loss: 0.045,  Val Acc: 98.72%,  Time: 0:05:06 *
+Epoch [8/100]
+Iter:   1000,  Train Loss:  0.02,  Train Acc: 98.44%,  Val Loss: 0.054,  Val Acc: 98.50%,  Time: 0:05:40 
+Epoch [9/100]
+Iter:   1100,  Train Loss: 0.00059,  Train Acc: 100.00%,  Val Loss: 0.051,  Val Acc: 98.70%,  Time: 0:06:13 
+Epoch [10/100]
+Iter:   1200,  Train Loss: 0.0024,  Train Acc: 100.00%,  Val Loss: 0.048,  Val Acc: 98.75%,  Time: 0:06:46 
+Epoch [11/100]
+Iter:   1300,  Train Loss: 0.013,  Train Acc: 99.22%,  Val Loss: 0.046,  Val Acc: 98.94%,  Time: 0:07:20 
+Iter:   1400,  Train Loss: 0.0022,  Train Acc: 100.00%,  Val Loss: 0.051,  Val Acc: 98.77%,  Time: 0:07:53 
+Epoch [12/100]
+Iter:   1500,  Train Loss: 0.015,  Train Acc: 98.44%,  Val Loss: 0.054,  Val Acc: 98.79%,  Time: 0:08:27 
+Epoch [13/100]
+Iter:   1600,  Train Loss: 0.0058,  Train Acc: 99.22%,  Val Loss: 0.056,  Val Acc: 98.89%,  Time: 0:09:01 
+Epoch [14/100]
+Iter:   1700,  Train Loss: 0.00018,  Train Acc: 100.00%,  Val Loss: 0.051,  Val Acc: 98.84%,  Time: 0:09:34 
+Iter:   1800,  Train Loss: 0.00041,  Train Acc: 100.00%,  Val Loss: 0.058,  Val Acc: 98.58%,  Time: 0:10:07 
+Epoch [15/100]
+Iter:   1900,  Train Loss:  0.02,  Train Acc: 98.44%,  Val Loss: 0.047,  Val Acc: 98.65%,  Time: 0:10:41 
+No optimization for a long time, auto-stopping...
+Test Loss: 0.017,  Test Acc: 99.41%
+Precision, Recall and F1-Score...
+              precision    recall  f1-score   support
+
+         真新闻     0.9939    0.9982    0.9961      7844
+         假新闻     0.9948    0.9825    0.9886      2743
+
+    accuracy                         0.9941     10587
+   macro avg     0.9944    0.9904    0.9923     10587
+weighted avg     0.9941    0.9941    0.9941     10587
+
+Confusion Matrix...
+[[7830   14]
+ [  48 2695]]
+Time usage: 0:00:05
+[0m
