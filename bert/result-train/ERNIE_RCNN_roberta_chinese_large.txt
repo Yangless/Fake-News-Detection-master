@@ -1,0 +1,67 @@
+run.py:35: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  x_train["new"] = t["Title"] + ' ' + t["Ofiicial Account Name"] + ' ' + t["Report Content"]
+run.py:39: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  x_dev["new"] = t["Title"] + ' ' + t["Ofiicial Account Name"] + ' ' + t["Report Content"]
+run.py:43: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  x_test["new"] = t["Title"] + ' ' + t["Ofiicial Account Name"] + ' ' + t["Report Content"]
+Loading data...
+Time usage: 0:00:09
+Epoch [1/100]
+E:\Code\Fake-News-Detection-master\bert\pytorch_pretrained\optimization.py:275: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at C:\cb\pytorch_1000000000000\work\torch\csrc\utils\python_arg_parser.cpp:1630.)
+  next_m.mul_(beta1).add_(1 - beta1, grad)
+Iter:      0,  Train Loss:   0.9,  Train Acc: 25.00%,  Val Loss:  0.92,  Val Acc: 21.68%,  Time: 0:00:08 *
+Iter:    100,  Train Loss:  0.21,  Train Acc: 93.75%,  Val Loss:  0.25,  Val Acc: 89.73%,  Time: 0:01:07 *
+Iter:    200,  Train Loss:  0.13,  Train Acc: 95.31%,  Val Loss:  0.13,  Val Acc: 95.68%,  Time: 0:02:06 *
+Epoch [2/100]
+Iter:    300,  Train Loss:  0.14,  Train Acc: 95.31%,  Val Loss: 0.099,  Val Acc: 96.72%,  Time: 0:03:05 *
+Iter:    400,  Train Loss: 0.098,  Train Acc: 98.44%,  Val Loss: 0.076,  Val Acc: 97.13%,  Time: 0:04:04 *
+Iter:    500,  Train Loss: 0.076,  Train Acc: 96.88%,  Val Loss: 0.088,  Val Acc: 96.60%,  Time: 0:05:02 
+Epoch [3/100]
+Iter:    600,  Train Loss: 0.0034,  Train Acc: 100.00%,  Val Loss: 0.052,  Val Acc: 98.41%,  Time: 0:06:00 *
+Iter:    700,  Train Loss: 0.028,  Train Acc: 98.44%,  Val Loss: 0.046,  Val Acc: 98.65%,  Time: 0:06:59 *
+Epoch [4/100]
+Iter:    800,  Train Loss: 0.0096,  Train Acc: 100.00%,  Val Loss:  0.05,  Val Acc: 98.38%,  Time: 0:07:56 
+Iter:    900,  Train Loss: 0.0051,  Train Acc: 100.00%,  Val Loss: 0.046,  Val Acc: 98.58%,  Time: 0:08:54 
+Iter:   1000,  Train Loss:  0.01,  Train Acc: 100.00%,  Val Loss: 0.061,  Val Acc: 98.36%,  Time: 0:09:51 
+Epoch [5/100]
+Iter:   1100,  Train Loss: 0.0047,  Train Acc: 100.00%,  Val Loss:  0.06,  Val Acc: 98.29%,  Time: 0:10:48 
+Iter:   1200,  Train Loss: 0.057,  Train Acc: 98.44%,  Val Loss: 0.054,  Val Acc: 98.43%,  Time: 0:11:45 
+Epoch [6/100]
+Iter:   1300,  Train Loss: 0.013,  Train Acc: 100.00%,  Val Loss: 0.049,  Val Acc: 98.48%,  Time: 0:12:43 
+Iter:   1400,  Train Loss: 0.0083,  Train Acc: 100.00%,  Val Loss: 0.051,  Val Acc: 98.53%,  Time: 0:13:39 
+Iter:   1500,  Train Loss: 0.013,  Train Acc: 100.00%,  Val Loss: 0.076,  Val Acc: 98.07%,  Time: 0:14:37 
+Epoch [7/100]
+Iter:   1600,  Train Loss: 0.025,  Train Acc: 98.44%,  Val Loss: 0.057,  Val Acc: 98.24%,  Time: 0:15:35 
+Iter:   1700,  Train Loss: 0.00076,  Train Acc: 100.00%,  Val Loss: 0.073,  Val Acc: 98.53%,  Time: 0:16:33 
+No optimization for a long time, auto-stopping...
+Test Loss: 0.025,  Test Acc: 99.32%
+Precision, Recall and F1-Score...
+              precision    recall  f1-score   support
+
+         真新闻     0.9952    0.9957    0.9954      7844
+         假新闻     0.9876    0.9861    0.9869      2743
+
+    accuracy                         0.9932     10587
+   macro avg     0.9914    0.9909    0.9911     10587
+weighted avg     0.9932    0.9932    0.9932     10587
+
+Confusion Matrix...
+[[7810   34]
+ [  38 2705]]
+Time usage: 0:00:15
+[0m

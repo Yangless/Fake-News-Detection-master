@@ -1,0 +1,54 @@
+run.py:35: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  x_train["new"] = t["Title"] + ' ' + t["Ofiicial Account Name"] + ' ' + t["Report Content"]
+run.py:39: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  x_dev["new"] = t["Title"] + ' ' + t["Ofiicial Account Name"] + ' ' + t["Report Content"]
+run.py:43: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  x_test["new"] = t["Title"] + ' ' + t["Ofiicial Account Name"] + ' ' + t["Report Content"]
+Loading data...
+Time usage: 0:00:09
+Epoch [1/100]
+E:\Code\Fake-News-Detection-master\bert\pytorch_pretrained\optimization.py:275: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at C:\cb\pytorch_1000000000000\work\torch\csrc\utils\python_arg_parser.cpp:1630.)
+  next_m.mul_(beta1).add_(1 - beta1, grad)
+Iter:      0,  Train Loss:   1.0,  Train Acc:  0.00%,  Val Loss:   0.6,  Val Acc: 73.52%,  Time: 0:00:33 *
+Iter:    100,  Train Loss:   0.6,  Train Acc: 100.00%,  Val Loss:  0.59,  Val Acc: 74.67%,  Time: 0:01:13 *
+Iter:    200,  Train Loss:   1.1,  Train Acc:  0.00%,  Val Loss:  0.57,  Val Acc: 76.70%,  Time: 0:01:53 *
+Iter:    300,  Train Loss:  0.86,  Train Acc:  0.00%,  Val Loss:  0.56,  Val Acc: 77.81%,  Time: 0:02:33 *
+Iter:    400,  Train Loss:  0.35,  Train Acc: 100.00%,  Val Loss:  0.54,  Val Acc: 78.20%,  Time: 0:03:14 *
+Iter:    500,  Train Loss:  0.11,  Train Acc: 100.00%,  Val Loss:  0.54,  Val Acc: 78.58%,  Time: 0:03:55 *
+Iter:    600,  Train Loss:  0.16,  Train Acc: 100.00%,  Val Loss:  0.54,  Val Acc: 78.63%,  Time: 0:04:34 
+Iter:    700,  Train Loss:  0.12,  Train Acc: 100.00%,  Val Loss:  0.55,  Val Acc: 78.63%,  Time: 0:05:13 
+Iter:    800,  Train Loss:  0.11,  Train Acc: 100.00%,  Val Loss:  0.56,  Val Acc: 78.65%,  Time: 0:05:54 
+Iter:    900,  Train Loss:  0.12,  Train Acc: 100.00%,  Val Loss:  0.59,  Val Acc: 78.68%,  Time: 0:06:35 
+Iter:   1000,  Train Loss: 0.048,  Train Acc: 100.00%,  Val Loss:  0.61,  Val Acc: 78.68%,  Time: 0:07:16 
+No optimization for a long time, auto-stopping...
+Test Loss:  0.59,  Test Acc: 73.99%
+Precision, Recall and F1-Score...
+              precision    recall  f1-score   support
+
+         真新闻     0.7410    0.9976    0.8504      7844
+         假新闻     0.2963    0.0029    0.0058      2743
+
+    accuracy                         0.7399     10587
+   macro avg     0.5187    0.5002    0.4281     10587
+weighted avg     0.6258    0.7399    0.6315     10587
+
+Confusion Matrix...
+[[7825   19]
+ [2735    8]]
+Time usage: 0:01:23
+[0m

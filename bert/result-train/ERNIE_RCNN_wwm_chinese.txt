@@ -1,0 +1,29 @@
+run.py:35: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  x_train["new"] = t["Title"] + ' ' + t["Ofiicial Account Name"] + ' ' + t["Report Content"]
+run.py:39: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  x_dev["new"] = t["Title"] + ' ' + t["Ofiicial Account Name"] + ' ' + t["Report Content"]
+run.py:43: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  x_test["new"] = t["Title"] + ' ' + t["Ofiicial Account Name"] + ' ' + t["Report Content"]
+Model name './chinese_wwm_ext_pytorch' was not found in model name list (bert-base-uncased, bert-large-uncased, bert-base-cased, bert-large-cased, bert-base-multilingual-uncased, bert-base-multilingual-cased, bert-base-chinese). We assumed './chinese_wwm_ext_pytorch' was a path or url but couldn't find any file associated to this path or url.
+Loading data...
+Traceback (most recent call last):
+  File "run.py", line 57, in <module>
+    train_data, dev_data, test_data = build_dataset(x_train,y_train,x_dev,y_dev,x_test,y_test,config)
+  File "E:\Code\Fake-News-Detection-master\bert\utils.py", line 35, in build_dataset
+    train = load_dataset(x_train, y_train, config.pad_size)
+  File "E:\Code\Fake-News-Detection-master\bert\utils.py", line 18, in load_dataset
+    token = config.tokenizer.tokenize(content)
+AttributeError: 'NoneType' object has no attribute 'tokenize'
+[0m
