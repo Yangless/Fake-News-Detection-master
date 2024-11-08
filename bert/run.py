@@ -30,8 +30,8 @@ def shorten_url(url):
 def fun1(x):
     return " ".join(x)
 if __name__ == '__main__':
-    data = pd.read_csv("./Dataset/data/matched_urls_output_all.csv")
-    data2 = pd.read_csv("./Dataset/data/matched_urls_output_all.csv")
+    data = pd.read_csv("./Dataset/data/news_test_11-8.csv")
+    data2 = pd.read_csv("./Dataset/data/news_test_11-8.csv")
     data["Report Content"] = data["Report Content"].apply(lambda x: x.split("##"))
     data["Report Content"] = data["Report Content"].apply(fun1)
     data2["Report Content"] = data2["Report Content"].apply(lambda x: x.split("##"))
